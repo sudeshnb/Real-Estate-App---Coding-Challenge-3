@@ -44,10 +44,6 @@ class _ProfileAppBar extends StatelessWidget {
   }
 }
 
-///
-///
-///
-
 class _ProfilePageContent extends StatelessWidget {
   const _ProfilePageContent();
 

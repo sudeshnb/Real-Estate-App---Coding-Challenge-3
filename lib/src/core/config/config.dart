@@ -1,4 +1,4 @@
 library config;
 
-export 'injection.dart';
+export 'service.dart';
 export 'keyboard.dart';
