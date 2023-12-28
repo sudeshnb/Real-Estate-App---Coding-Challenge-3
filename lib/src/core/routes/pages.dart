@@ -1,6 +1,7 @@
 library route_pages;
 
 import 'package:flutter/material.dart';
+import 'package:proplink/src/core/error/exception.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
 import 'package:proplink/src/features/home/presentation/pages/details.screen.dart';
 import 'package:proplink/src/features/home/presentation/pages/details.sections/panorama.dart';
@@ -8,7 +9,6 @@ import 'package:proplink/src/features/home/presentation/pages/main.screen.dart';
 import 'package:proplink/src/features/home/presentation/pages/onboards.screen.dart';
 import 'package:proplink/src/features/home/presentation/pages/splash.screen.dart';
 import 'package:proplink/src/features/search/presentation/pages/pages.dart';
-import '/src/core/error/error.dart';
 import '/src/core/animation/animation.dart';
 import 'routes.dart';
 
