@@ -1,20 +1,11 @@
+import 'src/core/config/config.dart';
 import 'package:flutter/material.dart';
+import 'proplink.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+Future<void> main() async {
+  //  Here we are calling the Dependency Injection
+  await DependencyInjection.init();
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  //  This is the main app
+  runApp(const RootApp());
 }

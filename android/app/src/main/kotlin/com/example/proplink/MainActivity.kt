@@ -1,4 +1,4 @@
-package com.example.proplink
+package com.onyxsio.proplink
 
 import io.flutter.embedding.android.FlutterActivity
 
