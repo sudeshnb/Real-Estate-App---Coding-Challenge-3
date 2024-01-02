@@ -53,6 +53,7 @@ class AssetPath {
   static const String settingsWheel = "assets/icons/settings.wheel.svg";
 
   static const String time = "assets/icons/time.svg";
+  static const String sun = "assets/icons/sun.svg";
   static const String iosBack = "assets/icons/ios.back.svg";
 
   ///

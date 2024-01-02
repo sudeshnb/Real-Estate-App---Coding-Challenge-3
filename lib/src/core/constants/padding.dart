@@ -5,6 +5,8 @@ class AppPadding {
   static final h20 = EdgeInsets.symmetric(horizontal: 20.w);
   static final h10 = EdgeInsets.symmetric(horizontal: 10.w);
 
+  static final v5 = EdgeInsets.symmetric(vertical: 5.w);
+
   static final main = EdgeInsets.all(24.w);
 
   static final all15 = EdgeInsets.all(15.w);

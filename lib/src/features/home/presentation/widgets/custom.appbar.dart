@@ -84,7 +84,10 @@ class _SearchSection extends StatelessWidget {
         ),
         child: Row(
           children: [
-            SvgPicture.asset(AssetPath.search),
+            SvgPicture.asset(
+              AssetPath.search,
+              colorFilter: ColorFilter.mode(theme.mainIcon, BlendMode.srcIn),
+            ),
             const Expanded(
               child: Text(
                 'Search House, Apartment, etc',
@@ -185,13 +188,16 @@ class _AppBarSection extends StatelessWidget {
         height: 50.w,
         width: 50.w,
         decoration: AppDecoration.circle(isProfile, theme.cardColor),
-        child: isProfile ? _profilePic(theme) : _notificationIcon(),
+        child: isProfile ? _profilePic(theme) : _notificationIcon(theme),
       ),
     );
   }
 
-  Center _notificationIcon() => Center(
-        child: SvgPicture.asset(AssetPath.notificationHas),
+  Center _notificationIcon(ThemeData theme) => Center(
+        child: SvgPicture.asset(
+          AssetPath.notification,
+          colorFilter: ColorFilter.mode(theme.mainIcon, BlendMode.srcIn),
+        ),
       );
 
   Widget _profilePic(ThemeData theme) => CachedNetworkImage(

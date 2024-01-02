@@ -59,16 +59,13 @@ class _SettingsPageContent extends StatelessWidget {
     return SingleChildScrollView(
       padding: AppPadding.h20,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        // mainAxisSize: MainAxisSize.min,
         children: [
+          const _SettingsTileWithSwitch(title: 'Theme'),
           _SettingsTile(
             title: 'My Address',
             image: AssetPath.address,
             onPressed: () {},
-          ),
-          const _SettingsTileWithSwitch(
-            title: 'Theme',
-            image: AssetPath.call,
           ),
           _SettingsTile(
             title: 'Mail to us',
@@ -106,7 +103,7 @@ class _SettingsTile extends StatelessWidget {
     return ShrinkButton(
       onPressed: onPressed,
       child: Container(
-        margin: AppPadding.all10,
+        margin: AppPadding.v5,
         child: Row(
           children: [
             SvgPicture.asset(
@@ -133,12 +130,8 @@ class _SettingsTile extends StatelessWidget {
 }
 
 class _SettingsTileWithSwitch extends StatelessWidget {
-  const _SettingsTileWithSwitch({
-    required this.title,
-    required this.image,
-  });
+  const _SettingsTileWithSwitch({required this.title});
   final String title;
-  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -146,23 +139,26 @@ class _SettingsTileWithSwitch extends StatelessWidget {
     return BlocBuilder<ThemeCubit, ThemeState>(
       builder: (context, state) {
         return Container(
-          margin: AppPadding.all10,
+          margin: AppPadding.v5,
+          padding: AppPadding.h10,
           child: Row(
             children: [
               SvgPicture.asset(
-                image,
-                width: 40.w,
+                AssetPath.sun,
+                width: 25.w,
                 colorFilter: ColorFilter.mode(
                   theme.mainIcon,
                   BlendMode.srcIn,
                 ),
               ),
               AppSpace.w10,
-              Text(
-                title,
-                style: TextStyle(
-                  fontSize: 14.sp,
-                  fontWeight: FontWeight.w500,
+              Expanded(
+                child: Text(
+                  title,
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
               Switch.adaptive(
