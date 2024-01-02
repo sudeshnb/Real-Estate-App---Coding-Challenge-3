@@ -54,4 +54,15 @@ class AppDecoration {
           end: Alignment.bottomCenter,
         ),
       );
+
+  ///
+  /// This is used to bottom sheet top borers shape round
+  ///
+  static BoxDecoration bottomSheet(BuildContext context) => BoxDecoration(
+        color: Theme.of(context).scaffoldBackgroundColor,
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(30.0),
+          topRight: Radius.circular(30.0),
+        ),
+      );
 }

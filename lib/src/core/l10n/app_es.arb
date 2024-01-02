@@ -1,0 +1,13 @@
+{
+    "@@locale": "es",
+    "helloWorld": "¡Hola Mundo!",
+    "searchBarHint":"Buscar casa, apartamento, etc.",
+    "settings":"Ajustes",
+    "theme":"Tema",
+    "myAddress":"Mi dirección",
+    "mailToUs":"Correo a nosotras",
+    "support":"Habla con nuestro soporte",
+    "logout":"Cerrar sesión",
+    "language":"Idioma",
+    "desiredlanguage": "Seleccione el idioma que desee."
+}

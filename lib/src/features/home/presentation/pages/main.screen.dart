@@ -16,12 +16,15 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => MainPageCubit(),
-      child: const Scaffold(
-        body: Stack(
-          children: [
-            MainPageBody(),
-            MainPageBottomAppBar(),
-          ],
+      child: PopScope(
+        onPopInvoked: (didPop) => false,
+        child: const Scaffold(
+          body: Stack(
+            children: [
+              MainPageBody(),
+              MainPageBottomAppBar(),
+            ],
+          ),
         ),
       ),
     );

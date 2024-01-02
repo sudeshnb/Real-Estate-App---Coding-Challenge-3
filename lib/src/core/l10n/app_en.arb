@@ -1,0 +1,43 @@
+{
+  "@@locale": "en",
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "searchBarHint":"Search House, Apartment, etc",
+  "@searchBarHint": {
+    "description": "The home page Search bar hint text"
+  },
+  "settings":"Settings",
+  "@settings": {
+    "description": "The home page Search bar hint text"
+  },
+  "theme":"Theme",
+  "@theme": {
+    "description": "The home page Search bar hint text"
+  },
+  "myAddress":"My Address",
+  "@myAddress": {
+    "description": "The home page Search bar hint text"
+  },
+  "mailToUs":"Mail To Us",
+  "@mailToUs": {
+    "description": "The home page Search bar hint text"
+  },
+  "support":"Talk to our Support",
+  "@support": {
+    "description": "The home page Search bar hint text"
+  },
+  "logout":"Log Out",
+  "@logout": {
+    "description": "The home page Search bar hint text"
+  },
+  "language":"Language",
+  "@language": {
+    "description": "The home page Search bar hint text"
+  },
+  "desiredlanguage": "Please select your desired language.",
+  "@desiredlanguage": {
+    "description": "The home page Search bar hint text"
+  }
+}

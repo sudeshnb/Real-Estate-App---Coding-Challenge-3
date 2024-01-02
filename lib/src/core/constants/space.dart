@@ -11,6 +11,7 @@ class AppSpace {
 
   static SizedBox get w5 => SizedBox(width: 5.w);
   static SizedBox get w10 => SizedBox(width: 10.w);
+  static SizedBox get w30 => SizedBox(width: 30.w);
 
   /// This is the Spacer with flex.
   static Spacer spacer(int flex) => Spacer(flex: flex);

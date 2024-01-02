@@ -54,6 +54,8 @@ class AssetPath {
 
   static const String time = "assets/icons/time.svg";
   static const String sun = "assets/icons/sun.svg";
+  static const String language = "assets/icons/language.svg";
+
   static const String iosBack = "assets/icons/ios.back.svg";
 
   ///

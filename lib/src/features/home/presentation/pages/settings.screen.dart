@@ -3,9 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proplink/src/core/animation/animation.dart';
+import 'package:proplink/src/core/config/localizations.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/theme/cubit/cubit.dart';
 import 'package:proplink/src/core/theme/theme.dart';
+import 'package:proplink/src/features/home/presentation/widgets/bottomsheet.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 
 class SettingsPage extends StatelessWidget {
@@ -38,7 +40,7 @@ class _SettingsAppBar extends StatelessWidget {
         padding: AppPadding.h20,
         child: AppBar(
           title: Text(
-            'Settings',
+            AppLn.of(context)!.settings,
             style: TextStyle(
               color: theme.text,
               fontSize: 16.sp,
@@ -59,31 +61,43 @@ class _SettingsPageContent extends StatelessWidget {
     return SingleChildScrollView(
       padding: AppPadding.h20,
       child: Column(
-        // mainAxisSize: MainAxisSize.min,
         children: [
-          const _SettingsTileWithSwitch(title: 'Theme'),
+          _SettingsTileWithSwitch(title: AppLn.of(context)!.theme),
           _SettingsTile(
-            title: 'My Address',
+            title: AppLn.of(context)!.language,
+            image: AssetPath.language,
+            onPressed: () => language(context),
+          ),
+          _SettingsTile(
+            title: AppLn.of(context)!.myAddress,
             image: AssetPath.address,
             onPressed: () {},
           ),
           _SettingsTile(
-            title: 'Mail to us',
+            title: AppLn.of(context)!.mailToUs,
             image: AssetPath.mail,
             onPressed: () {},
           ),
           _SettingsTile(
-            title: 'Talk to our Support',
+            title: AppLn.of(context)!.support,
             image: AssetPath.call,
             onPressed: () {},
           ),
           _SettingsTile(
-            title: 'Log out',
+            title: AppLn.of(context)!.logout,
             image: AssetPath.logout,
             onPressed: () {},
           ),
         ],
       ),
+    );
+  }
+
+  Future<void> language(context) {
+    return showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColor.transparent,
+      builder: (builder) => const LanguageBottomSheet(),
     );
   }
 }
@@ -103,12 +117,13 @@ class _SettingsTile extends StatelessWidget {
     return ShrinkButton(
       onPressed: onPressed,
       child: Container(
-        margin: AppPadding.v5,
+        margin: AppPadding.v15,
+        padding: AppPadding.h10,
         child: Row(
           children: [
             SvgPicture.asset(
               image,
-              width: 40.w,
+              width: 20.w,
               colorFilter: ColorFilter.mode(
                 theme.mainIcon,
                 BlendMode.srcIn,
@@ -145,7 +160,7 @@ class _SettingsTileWithSwitch extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 AssetPath.sun,
-                width: 25.w,
+                width: 20.w,
                 colorFilter: ColorFilter.mode(
                   theme.mainIcon,
                   BlendMode.srcIn,

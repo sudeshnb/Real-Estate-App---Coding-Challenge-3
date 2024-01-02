@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proplink/src/core/animation/animation.dart';
+import 'package:proplink/src/core/config/localizations.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
 import 'package:proplink/src/core/routes/routes.dart';
@@ -88,10 +89,10 @@ class _SearchSection extends StatelessWidget {
               AssetPath.search,
               colorFilter: ColorFilter.mode(theme.mainIcon, BlendMode.srcIn),
             ),
-            const Expanded(
+            Expanded(
               child: Text(
-                'Search House, Apartment, etc',
-                style: TextStyle(color: AppColor.hint),
+                AppLn.of(context)!.searchBarHint,
+                style: const TextStyle(color: AppColor.hint),
               ),
             ),
             Container(width: 1.2, color: AppColor.border),
