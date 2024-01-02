@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:proplink/src/core/constants/constants.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
 
 class TitleSection extends StatelessWidget {
@@ -28,11 +29,12 @@ class _RightSidePriceArea extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return RichText(
       textAlign: TextAlign.end,
       text: TextSpan(
         style: TextStyle(
-          color: AppColor.main,
+          color: theme.mainText,
           fontSize: 22.sp,
           fontWeight: FontWeight.bold,
         ),
@@ -43,7 +45,7 @@ class _RightSidePriceArea extends StatelessWidget {
             text: '\npre ${property.prices![0].isSale}',
             style: TextStyle(
               fontSize: 12.sp,
-              color: AppColor.main,
+              color: theme.mainText,
               fontWeight: FontWeight.w300,
             ),
           ),
@@ -60,12 +62,13 @@ class _LeftSideTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Expanded(
       child: RichText(
         textAlign: TextAlign.start,
         text: TextSpan(
           style: TextStyle(
-            color: AppColor.main,
+            color: theme.mainText,
             fontSize: 22.sp,
             fontWeight: FontWeight.bold,
           ),
@@ -75,7 +78,7 @@ class _LeftSideTitle extends StatelessWidget {
               text: '\n${property.address}',
               style: TextStyle(
                 fontSize: 12.sp,
-                color: AppColor.main,
+                color: theme.mainText,
                 fontWeight: FontWeight.w300,
               ),
             ),

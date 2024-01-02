@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:proplink/src/core/animation/animation.dart';
 import 'package:proplink/src/core/constants/constants.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/shrink.dart';
 
 import '../cubit/onboard.dart';
@@ -121,6 +122,7 @@ class OnBoardTextListCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return OpacityTranslateAnimation(
       duration: const Duration(milliseconds: 2000),
       child: Padding(
@@ -132,7 +134,7 @@ class OnBoardTextListCard extends StatelessWidget {
               title,
               textAlign: TextAlign.center,
               style: AppTextStyle.defaultStyle.copyWith(
-                color: AppColor.main,
+                color: theme.mainText,
                 fontSize: 20.sp,
               ),
             ),
@@ -141,7 +143,8 @@ class OnBoardTextListCard extends StatelessWidget {
               textAlign: TextAlign.center,
               style: AppTextStyle.defaultStyle.copyWith(
                 fontSize: 14.sp,
-                color: AppColor.fader,
+                color: theme.mainText,
+                fontWeight: FontWeight.w300,
               ),
             ),
           ],
@@ -157,6 +160,7 @@ class BottonsAndIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return BlocBuilder<OnboardPageViewCubit, OnboardPageViewState>(
       builder: (context, state) {
         final bool isNotLast = (state.onboards.length - 1 != state.index);
@@ -174,7 +178,7 @@ class BottonsAndIndicator extends StatelessWidget {
                       child: CircleAvatar(
                         backgroundColor: AppColor.white,
                         radius: 25.sp,
-                        child: const Icon(Icons.arrow_back),
+                        child: Icon(Icons.arrow_back, color: theme.icon),
                       ),
                       onPressed: () =>
                           _leftPressed(context, isFirst: state.index > 0),
@@ -236,18 +240,22 @@ class DotIndicatorBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return BlocBuilder<OnboardPageViewCubit, OnboardPageViewState>(
       builder: (context, state) {
         return Row(
           mainAxisSize: MainAxisSize.min,
           children: List.generate(
-              state.onboards.length, (now) => _indicator(state.index != now)),
+            state.onboards.length,
+            (now) => _indicator(state.index != now, theme),
+          ),
         );
       },
     );
   }
 
-  Widget _indicator(bool isClick) {
+  Widget _indicator(bool isClick, ThemeData theme) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 500),
       margin: EdgeInsets.symmetric(horizontal: 3.w),
@@ -256,7 +264,7 @@ class DotIndicatorBar extends StatelessWidget {
       decoration: BoxDecoration(
         // shape: isClick ? BoxShape.circle : BoxShape.rectangle,
         borderRadius: BorderRadius.circular(10.0),
-        color: isClick ? AppColor.main.withOpacity(0.4) : AppColor.fader,
+        color: isClick ? theme.indicator.withOpacity(0.4) : theme.indicator,
       ),
     );
   }

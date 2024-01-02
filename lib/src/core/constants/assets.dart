@@ -46,6 +46,15 @@ class AssetPath {
   static const String sqft = "assets/icons/sqft.svg";
   static const String add = "assets/icons/add.svg";
 
+  static const String address = "assets/icons/address.svg";
+  static const String call = "assets/icons/call.svg";
+  static const String logout = "assets/icons/logout.svg";
+  static const String mail = "assets/icons/mail.svg";
+  static const String settingsWheel = "assets/icons/settings.wheel.svg";
+
+  static const String time = "assets/icons/time.svg";
+  static const String iosBack = "assets/icons/ios.back.svg";
+
   ///
   ///
   static const String empty = "assets/icons/empty.svg";

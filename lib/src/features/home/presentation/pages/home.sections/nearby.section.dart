@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/routes/routes.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
+import 'package:proplink/src/features/home/presentation/cubit/favorite.dart';
 
 class NearbySection extends StatelessWidget {
   const NearbySection({super.key, required this.nearby});
@@ -52,12 +55,13 @@ class _NearbyItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ShrinkButton(
       onPressed: () => goToPage(context),
       child: Container(
         padding: EdgeInsets.all(10.w),
         decoration: BoxDecoration(
-          color: AppColor.softGrey,
+          color: theme.cardColor,
           borderRadius: BorderRadius.circular(25.0),
         ),
         child: Column(
@@ -79,6 +83,7 @@ class _NearbyItemCardBottom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Expanded(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -88,7 +93,7 @@ class _NearbyItemCardBottom extends StatelessWidget {
             property.area!,
             maxLines: 1,
             style: TextStyle(
-              color: AppColor.text,
+              color: theme.text,
               fontSize: 12.sp,
               fontWeight: FontWeight.bold,
             ),
@@ -99,8 +104,8 @@ class _NearbyItemCardBottom extends StatelessWidget {
               AppSpace.w5,
               Text(
                 property.reviewCount.toString(),
-                style: const TextStyle(
-                  color: AppColor.text,
+                style: TextStyle(
+                  color: theme.text,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -115,7 +120,7 @@ class _NearbyItemCardBottom extends StatelessWidget {
                         property.city!,
                         maxLines: 1,
                         style: TextStyle(
-                          color: AppColor.text,
+                          color: theme.text,
                           fontSize: 10.sp,
                           fontWeight: FontWeight.w300,
                         ),
@@ -164,14 +169,17 @@ class _NearbyItemCardTop extends StatelessWidget {
           Positioned(
             top: 10.w,
             right: 10.w,
-            child: CircleAvatar(
-              backgroundColor: AppColor.button,
-              radius: 15.sp,
-              child: Icon(
-                Icons.favorite,
-                color: AppColor.white,
-                size: 15.sp,
-              ),
+            child: BlocBuilder<FavoriteCubit, FavoriteState>(
+              builder: (context, state) {
+                final bool hasData = state.properties.contains(property);
+                return CircleButton(
+                  onPressed: () => context.read<FavoriteCubit>().add(property),
+                  icon: hasData ? Icons.favorite : Icons.favorite_border,
+                  radius: 15.sp,
+                  color: hasData ? AppColor.white : AppColor.radial,
+                  bgColor: hasData ? AppColor.button : AppColor.softGrey,
+                );
+              },
             ),
           ),
           Positioned(
@@ -220,12 +228,13 @@ class _NearbyTopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
       padding: AppPadding.h20,
       child: Text(
         'Explore Nearby Estates',
         style: TextStyle(
-          color: AppColor.text,
+          color: theme.text,
           fontSize: 18.sp,
           fontWeight: FontWeight.bold,
         ),

@@ -138,6 +138,7 @@ class _SearchFoundListView extends StatelessWidget {
   final SearchFound state;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ScrollDetective(
       list: GridView.count(
         crossAxisCount: 2,
@@ -149,7 +150,9 @@ class _SearchFoundListView extends StatelessWidget {
         children:
             state.properties.map((e) => _NearbyItemCard(property: e)).toList(),
       ),
-      top: Container(decoration: AppDecoration.top, height: 20.w),
+      top: Container(
+          decoration: AppDecoration.top(theme.scaffoldBackgroundColor),
+          height: 20.w),
     );
   }
 }
@@ -233,7 +236,7 @@ class _NearbyItemCardBottom extends StatelessWidget {
             property.area!,
             maxLines: 1,
             style: TextStyle(
-              color: AppColor.text,
+              color: AppColor.darkText,
               fontSize: 12.sp,
               fontWeight: FontWeight.bold,
             ),
@@ -245,7 +248,7 @@ class _NearbyItemCardBottom extends StatelessWidget {
               Text(
                 property.reviewCount.toString(),
                 style: const TextStyle(
-                  color: AppColor.text,
+                  color: AppColor.darkText,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -260,7 +263,7 @@ class _NearbyItemCardBottom extends StatelessWidget {
                         property.city!,
                         maxLines: 1,
                         style: TextStyle(
-                          color: AppColor.text,
+                          color: AppColor.darkText,
                           fontSize: 10.sp,
                           fontWeight: FontWeight.w300,
                         ),

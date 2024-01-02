@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:proplink/src/core/constants/constants.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/demo.dart';
 
@@ -41,6 +42,7 @@ class _LocationItemCard extends StatelessWidget {
   final LocationModel item;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ShrinkButton(
       onPressed: () {
         //TODO
@@ -49,7 +51,7 @@ class _LocationItemCard extends StatelessWidget {
         margin: EdgeInsets.only(left: 10.w),
         padding: EdgeInsets.all(5.w).copyWith(right: 20.w),
         decoration: BoxDecoration(
-          color: AppColor.softGrey,
+          color: theme.cardColor,
           borderRadius: BorderRadius.circular(25.0),
         ),
         child: Row(
@@ -63,7 +65,10 @@ class _LocationItemCard extends StatelessWidget {
             AppSpace.w10,
             Text(
               item.name,
-              style: TextStyle(color: AppColor.text, fontSize: 14.sp),
+              style: TextStyle(
+                color: theme.text,
+                fontSize: 14.sp,
+              ),
             ),
           ],
         ),
@@ -77,6 +82,7 @@ class _LocationTopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
       padding: AppPadding.h20,
       child: Row(
@@ -85,7 +91,7 @@ class _LocationTopBar extends StatelessWidget {
           Text(
             'Top Locations',
             style: TextStyle(
-              color: AppColor.text,
+              color: theme.text,
               fontSize: 18.sp,
               fontWeight: FontWeight.bold,
             ),
@@ -97,7 +103,7 @@ class _LocationTopBar extends StatelessWidget {
             child: Text(
               'explore',
               style: TextStyle(
-                color: AppColor.main,
+                color: theme.mainText,
                 fontSize: 14.sp,
               ),
             ),

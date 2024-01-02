@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
 import 'package:proplink/src/core/routes/routes.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/demo.dart';
 
@@ -52,6 +53,7 @@ class _AgentItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ShrinkButton(
       onPressed: () {
         //TODO
@@ -69,7 +71,7 @@ class _AgentItemCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: AppColor.softGrey,
                     shape: BoxShape.circle,
-                    border: Border.all(width: 2, color: AppColor.softGrey),
+                    border: Border.all(width: 2, color: theme.cardColor),
                     image: DecorationImage(image: img, fit: BoxFit.cover),
                   ),
                 );
@@ -78,7 +80,7 @@ class _AgentItemCard extends StatelessWidget {
           Text(
             item.name,
             style: TextStyle(
-              color: AppColor.text,
+              color: theme.text,
               fontSize: 12.sp,
               fontWeight: FontWeight.w300,
             ),
@@ -94,6 +96,7 @@ class _AgentsTopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
       padding: AppPadding.h20,
       child: Row(
@@ -102,7 +105,7 @@ class _AgentsTopBar extends StatelessWidget {
           Text(
             'Top Estate Agent',
             style: TextStyle(
-              color: AppColor.text,
+              color: theme.text,
               fontSize: 18.sp,
               fontWeight: FontWeight.bold,
             ),
@@ -114,7 +117,7 @@ class _AgentsTopBar extends StatelessWidget {
             child: Text(
               'explore',
               style: TextStyle(
-                color: AppColor.main,
+                color: theme.mainText,
                 fontSize: 14.sp,
               ),
             ),

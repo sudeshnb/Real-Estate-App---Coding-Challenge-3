@@ -6,6 +6,7 @@ import 'package:proplink/src/features/home/data/models/property.dart';
 import 'package:proplink/src/features/home/presentation/pages/details.screen.dart';
 import 'package:proplink/src/features/home/presentation/pages/details.sections/panorama.dart';
 import 'package:proplink/src/features/home/presentation/pages/main.screen.dart';
+import 'package:proplink/src/features/home/presentation/pages/notification.screen.dart';
 import 'package:proplink/src/features/home/presentation/pages/onboards.screen.dart';
 import 'package:proplink/src/features/home/presentation/pages/splash.screen.dart';
 import 'package:proplink/src/features/search/presentation/pages/pages.dart';
@@ -35,6 +36,9 @@ class AppRoute {
 
       case RoutesName.search:
         return const PageFadeTransition(child: SearchPage()).build;
+
+      case RoutesName.notification:
+        return const PageFadeTransition(child: NotificationsPage()).build;
 
       default:
         // If there is no such named route in the switch statement

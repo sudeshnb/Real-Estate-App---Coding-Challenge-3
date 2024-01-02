@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proplink/src/core/constants/constants.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
 
 class FacilitiesSection extends StatelessWidget {
@@ -11,12 +12,13 @@ class FacilitiesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Container(
       height: 56.w,
       padding: AppPadding.h10,
       margin: AppPadding.h20,
       decoration: BoxDecoration(
-        color: AppColor.softGrey,
+        color: theme.cardColor,
         borderRadius: BorderRadius.circular(16.0),
       ),
       child: Row(
@@ -48,9 +50,17 @@ class _ItemTag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Column(
       mainAxisSize: MainAxisSize.min,
-      children: [SvgPicture.asset(image), AppSpace.h5, Text(value)],
+      children: [
+        SvgPicture.asset(
+          image,
+          colorFilter: ColorFilter.mode(theme.mainIcon, BlendMode.srcIn),
+        ),
+        AppSpace.h5,
+        Text(value)
+      ],
     );
   }
 }

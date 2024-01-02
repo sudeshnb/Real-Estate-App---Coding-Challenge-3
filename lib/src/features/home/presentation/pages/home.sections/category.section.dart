@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:proplink/src/core/animation/animation.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/shrink.dart';
 import 'package:proplink/src/features/home/data/models/demo.dart';
 
@@ -41,6 +42,7 @@ class _CategoryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ShrinkButton(
       onPressed: () {
         //TODO
@@ -48,12 +50,12 @@ class _CategoryButton extends StatelessWidget {
       child: Container(
         padding: AppPadding.all15,
         decoration: BoxDecoration(
-          color: isClick ? AppColor.main : AppColor.softGrey,
+          color: isClick ? AppColor.main : theme.cardColor,
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Text(
           value,
-          style: TextStyle(color: isClick ? AppColor.white : AppColor.text),
+          style: TextStyle(color: isClick ? AppColor.white : theme.text),
         ),
       ),
     );

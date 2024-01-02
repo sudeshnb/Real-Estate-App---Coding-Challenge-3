@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/routes/routes.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/shrink.dart';
 import 'package:proplink/src/features/home/presentation/cubit/onboard.dart';
 
@@ -48,6 +49,7 @@ class OnBoardingAppBar extends StatelessWidget implements PreferredSizeWidget {
   final OnboardPageViewState state;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return AppBar(
       elevation: 0.0,
       automaticallyImplyLeading: false,
@@ -58,7 +60,7 @@ class OnBoardingAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: ShrinkButton(
               child: Text(
                 'Skip',
-                style: AppTextStyle.wBody.copyWith(color: AppColor.main),
+                style: AppTextStyle.wBody.copyWith(color: theme.mainText),
               ),
               onPressed: () => onPressed(context),
             ),

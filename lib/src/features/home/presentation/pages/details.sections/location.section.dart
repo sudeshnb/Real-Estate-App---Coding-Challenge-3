@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
 import 'package:proplink/src/features/home/presentation/cubit/google.map.dart';
@@ -16,6 +17,7 @@ class LocationSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return BlocProvider(
       create: (context) => GoogleMapViewCubit()..load(property),
       child: Padding(
@@ -26,7 +28,7 @@ class LocationSection extends StatelessWidget {
             Text(
               'Location & Public Facilities',
               style: TextStyle(
-                color: AppColor.main,
+                color: theme.mainText,
                 fontSize: 16.sp,
                 fontWeight: FontWeight.bold,
               ),
@@ -34,17 +36,19 @@ class LocationSection extends StatelessWidget {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundColor: AppColor.softGrey,
+                  backgroundColor: theme.cardColor,
                   child: SvgPicture.asset(
                     AssetPath.location,
                     height: 20.sp,
+                    colorFilter:
+                        ColorFilter.mode(theme.mainIcon, BlendMode.srcIn),
                   ),
                 ),
                 AppSpace.w10,
                 Text(
                   property.address!,
                   style: TextStyle(
-                    color: AppColor.main,
+                    color: theme.mainText,
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w400,
                   ),
@@ -56,7 +60,7 @@ class LocationSection extends StatelessWidget {
               width: double.infinity,
               clipBehavior: Clip.hardEdge,
               decoration: BoxDecoration(
-                color: AppColor.softGrey,
+                color: theme.cardColor,
                 borderRadius: BorderRadius.circular(25.0),
               ),
               child: Column(
@@ -87,7 +91,7 @@ class LocationSection extends StatelessWidget {
                         child: Text(
                           'View all on map',
                           style: TextStyle(
-                            color: AppColor.main,
+                            color: theme.mainText,
                             fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),

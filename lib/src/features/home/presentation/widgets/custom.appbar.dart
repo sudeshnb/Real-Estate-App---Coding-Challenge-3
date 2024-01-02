@@ -7,6 +7,7 @@ import 'package:proplink/src/core/animation/animation.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
 import 'package:proplink/src/core/routes/routes.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/shrink.dart';
 
 class AppBarSection extends SliverPersistentHeaderDelegate {
@@ -68,6 +69,7 @@ class _SearchSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ShrinkButton(
       onPressed: () => onPressed(context),
       child: AnimatedContainer(
@@ -77,7 +79,7 @@ class _SearchSection extends StatelessWidget {
         width: width,
         padding: AppPadding.all15,
         decoration: BoxDecoration(
-          color: AppColor.softGrey,
+          color: theme.cardColor,
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Row(
@@ -106,6 +108,7 @@ class _AppBarSection extends StatelessWidget {
   final double percent;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     String greeting() {
       var hour = DateTime.now().hour;
       if (hour < 12) {
@@ -118,7 +121,7 @@ class _AppBarSection extends StatelessWidget {
     }
 
     return ColoredBox(
-      color: AppColor.white,
+      color: theme.appBarTheme.backgroundColor!,
       child: Stack(
         children: [
           _backgroundCircle(),
@@ -127,10 +130,10 @@ class _AppBarSection extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                _greetingMessage(greeting()),
+                _greetingMessage(greeting(), theme),
                 AppSpace.w10,
-                _circleButton(false),
-                _circleButton(true),
+                _circleButton(context, false),
+                _circleButton(context, true),
               ].horizontalGap(10.w),
             ),
           ),
@@ -150,18 +153,18 @@ class _AppBarSection extends StatelessWidget {
     );
   }
 
-  Opacity _greetingMessage(String greeting) {
+  Opacity _greetingMessage(String greeting, ThemeData theme) {
     return Opacity(
       opacity: percent,
       child: Container(
         height: 50.w,
-        decoration: AppDecoration.greeting,
+        decoration: AppDecoration.greeting(theme.cardColor),
         padding: AppPadding.h20,
         child: Center(
           child: Text(
             greeting,
             style: TextStyle(
-              color: AppColor.main,
+              color: theme.mainText,
               fontSize: 14.sp,
             ),
           ),
@@ -170,14 +173,19 @@ class _AppBarSection extends StatelessWidget {
     );
   }
 
-  Widget _circleButton(bool isProfile) {
+  Widget _circleButton(BuildContext context, bool isProfile) {
+    final theme = Theme.of(context);
     return ShrinkButton(
-      onPressed: () {},
+      onPressed: () {
+        if (!isProfile) {
+          Navigator.of(context).pushNamed(RoutesName.notification);
+        }
+      },
       child: Container(
         height: 50.w,
         width: 50.w,
-        decoration: AppDecoration.circle(isProfile),
-        child: isProfile ? _profilePic() : _notificationIcon(),
+        decoration: AppDecoration.circle(isProfile, theme.cardColor),
+        child: isProfile ? _profilePic(theme) : _notificationIcon(),
       ),
     );
   }
@@ -186,18 +194,19 @@ class _AppBarSection extends StatelessWidget {
         child: SvgPicture.asset(AssetPath.notificationHas),
       );
 
-  Widget _profilePic() => CachedNetworkImage(
-        placeholder: (context, url) => const Shimmer(
+  Widget _profilePic(ThemeData theme) => CachedNetworkImage(
+        placeholder: (context, url) => Shimmer(
           isLoading: true,
-          child: CircleAvatar(
-            backgroundColor: AppColor.white,
-          ),
+          child: CircleAvatar(backgroundColor: theme.cardColor),
         ),
         errorWidget: (context, url, error) => const Icon(Icons.error),
         imageUrl: AssetPath.user,
         imageBuilder: (context, img) => Padding(
           padding: const EdgeInsets.all(1.2),
-          child: CircleAvatar(backgroundImage: img),
+          child: CircleAvatar(
+            backgroundImage: img,
+            backgroundColor: theme.cardColor,
+          ),
         ),
       );
 }
@@ -211,6 +220,7 @@ class _UserWelcomeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Positioned(
       bottom: max(bottom, 90),
       left: 0,
@@ -221,19 +231,19 @@ class _UserWelcomeSection extends StatelessWidget {
           child: RichText(
             text: TextSpan(
               style: TextStyle(
-                color: AppColor.black,
+                color: theme.mainText,
                 fontSize: 20.sp,
               ),
-              children: const [
-                TextSpan(text: 'Hey, '),
+              children: [
+                const TextSpan(text: 'Hey, '),
                 TextSpan(
                   text: 'Sudesh!\n',
                   style: TextStyle(
-                    color: AppColor.main,
+                    color: theme.mainText,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                TextSpan(text: "Let's start exploring"),
+                const TextSpan(text: "Let's start exploring"),
               ],
             ),
           ),

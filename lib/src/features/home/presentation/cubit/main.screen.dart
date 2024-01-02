@@ -1,9 +1,10 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:proplink/src/features/home/presentation/pages/settings.screen.dart';
 import '../pages/favorite.screen.dart';
 import '../pages/home.screen.dart';
-import '../pages/profile.screen.dart';
+import '../../../profile/presentation/pages/profile.screen.dart';
 
 class MainPageState extends Equatable {
   final List<Widget> pages;
@@ -40,7 +41,7 @@ class MainPageCubit extends Cubit<MainPageState> {
     const HomePage(),
     const FavoritePage(),
     const ProfilePage(),
-    const Center(child: Text('Settings')),
+    const SettingsPage(),
   ];
 
   void click(int index) {

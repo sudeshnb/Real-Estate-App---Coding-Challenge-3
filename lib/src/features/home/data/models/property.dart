@@ -37,6 +37,7 @@ class Property {
   double? lotSizeValue;
   String? overView;
   String? lotSizeUnit;
+  String? createAt;
   List<Brokers>? brokers;
   double? reviewCount;
   List<Reviews>? reviews;
@@ -69,6 +70,7 @@ class Property {
     this.numBedroom,
     this.numBathroom,
     this.prices,
+    this.createAt,
     this.parking,
     this.propertyTaxes,
     this.images,
@@ -87,10 +89,9 @@ class Property {
     propertyType = json['propertyType'];
     floorspace = json['floorspace'];
     latitude = json['latitude'];
-
+    createAt = json['createAt'];
     discountDescription = json['discountDescription'];
     discountTitle = json['discountTitle'];
-
     listingName = json['listingName'];
     longitude = json['longitude'];
     lotSizeValue = json['lotSizeValue'];

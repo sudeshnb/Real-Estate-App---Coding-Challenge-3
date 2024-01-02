@@ -24,31 +24,31 @@ class AppDecoration {
         ),
       );
 
-  static BoxDecoration circle(bool isProfile) => BoxDecoration(
+  static BoxDecoration circle(bool isProfile, Color color) => BoxDecoration(
         shape: BoxShape.circle,
         border: Border.all(
           color: isProfile ? AppColor.border : AppColor.button,
           width: 1.2,
         ),
-        color: AppColor.white,
+        color: color,
       );
 
-  static BoxDecoration get greeting => BoxDecoration(
-        color: AppColor.white,
+  static BoxDecoration greeting(Color color) => BoxDecoration(
+        color: color,
         borderRadius: BorderRadius.circular(50.0),
         border: Border.all(color: AppColor.border, width: 1),
       );
 
-  static BoxDecoration get top => BoxDecoration(
+  static BoxDecoration top(Color color) => BoxDecoration(
         gradient: LinearGradient(
-          colors: [AppColor.white.withOpacity(0.0), AppColor.white],
+          colors: [color.withOpacity(0.0), color],
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,
         ),
       );
-  static BoxDecoration get bottomAppBar => BoxDecoration(
+  static BoxDecoration bottomAppBar(Color color) => BoxDecoration(
         gradient: LinearGradient(
-          colors: [AppColor.white.withOpacity(0.0), AppColor.white],
+          colors: [color.withOpacity(0.0), color],
           stops: const [0.0, 0.1],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,

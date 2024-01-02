@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proplink/src/core/animation/animation.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/routes/routes.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
 import 'package:proplink/src/features/home/presentation/cubit/favorite.dart';
@@ -15,12 +16,14 @@ class FavoritePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Column(
-        children: [
-          _FavoriteAppBar(),
-          _FavoritePageContent(),
-        ],
+    return const OpacityTranslateAnimation(
+      child: SafeArea(
+        child: Column(
+          children: [
+            _FavoriteAppBar(),
+            _FavoritePageContent(),
+          ],
+        ),
       ),
     );
   }
@@ -31,6 +34,7 @@ class _FavoriteAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return SizedBox(
       height: kToolbarHeight,
       child: Padding(
@@ -40,7 +44,7 @@ class _FavoriteAppBar extends StatelessWidget {
             'My favorite',
             maxLines: 1,
             style: TextStyle(
-              color: AppColor.text,
+              color: theme.mainText,
               fontSize: 16.sp,
               fontWeight: FontWeight.w500,
             ),
@@ -76,6 +80,7 @@ class _FavoriteListView extends StatelessWidget {
   final List<Property> properties;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Expanded(
       child: ScrollDetective(
         list: GridView.count(
@@ -88,7 +93,9 @@ class _FavoriteListView extends StatelessWidget {
           children:
               properties.map((e) => _FavoriteItemCard(property: e)).toList(),
         ),
-        top: Container(decoration: AppDecoration.top, height: 20.w),
+        top: Container(
+            decoration: AppDecoration.top(theme.scaffoldBackgroundColor),
+            height: 20.w),
       ),
     );
   }
@@ -145,7 +152,7 @@ class _FavoriteItemCardBottom extends StatelessWidget {
             property.area!,
             maxLines: 1,
             style: TextStyle(
-              color: AppColor.text,
+              color: AppColor.darkText,
               fontSize: 12.sp,
               fontWeight: FontWeight.bold,
             ),
@@ -157,7 +164,7 @@ class _FavoriteItemCardBottom extends StatelessWidget {
               Text(
                 property.reviewCount.toString(),
                 style: const TextStyle(
-                  color: AppColor.text,
+                  color: AppColor.darkText,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -172,7 +179,7 @@ class _FavoriteItemCardBottom extends StatelessWidget {
                         property.city!,
                         maxLines: 1,
                         style: TextStyle(
-                          color: AppColor.text,
+                          color: AppColor.darkText,
                           fontSize: 10.sp,
                           fontWeight: FontWeight.w300,
                         ),
@@ -277,6 +284,7 @@ class _FavoriteItemsEmpty extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Expanded(
       child: Padding(
         padding: AppPadding.main,
@@ -295,7 +303,7 @@ class _FavoriteItemsEmpty extends StatelessWidget {
                   TextSpan(
                     text: "Your favorite page is\n",
                     style: TextStyle(
-                      color: AppColor.main,
+                      color: theme.mainText,
                       fontSize: 22.sp,
                       fontWeight: FontWeight.normal,
                     ),
@@ -303,7 +311,7 @@ class _FavoriteItemsEmpty extends StatelessWidget {
                   TextSpan(
                     text: "empty",
                     style: TextStyle(
-                      color: AppColor.main,
+                      color: theme.mainText,
                       fontSize: 22.sp,
                       fontWeight: FontWeight.bold,
                     ),
@@ -316,7 +324,7 @@ class _FavoriteItemsEmpty extends StatelessWidget {
               AppString.emptyFavorite,
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: AppColor.main,
+                color: theme.mainText,
                 fontSize: 12.sp,
                 fontWeight: FontWeight.w300,
               ),

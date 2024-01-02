@@ -8,4 +8,7 @@ class AppString {
 
   static const String emptyFavorite =
       "Click add button above to start exploring and choose your favorite estates. ";
+
+  static const String emptyList =
+      "Sorry, we can't find the real estate you are listing.";
 }

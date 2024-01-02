@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
 import 'package:proplink/src/core/routes/routes.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
 
@@ -129,12 +130,16 @@ class _PanaromaButton extends StatelessWidget {
   final String image;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ShrinkButton(
       onPressed: () => goToPage(context),
       child: _MiniImageBox(
         child: Padding(
           padding: AppPadding.all10,
-          child: SvgPicture.asset(AssetPath.panaroma),
+          child: SvgPicture.asset(
+            AssetPath.panaroma,
+            colorFilter: ColorFilter.mode(theme.mainIcon, BlendMode.srcIn),
+          ),
         ),
       ),
     );
@@ -170,12 +175,13 @@ class _MiniImageBox extends StatelessWidget {
   final Widget? child;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Container(
       height: 55.w,
       width: 55.w,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(18.0),
-        color: AppColor.softGrey,
+        color: theme.cardColor,
         border: Border.all(width: 3, color: AppColor.white),
         image: image,
       ),

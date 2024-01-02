@@ -1,89 +1,38 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:proplink/src/core/constants/constants.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
+import 'tabs.dart';
 
-class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Column(
-        children: [
-          _ProfileAppBar(),
-          _ProfilePageContent(),
-        ],
-      ),
-    );
-  }
-}
-
-class _ProfileAppBar extends StatelessWidget {
-  const _ProfileAppBar();
+class ProfilePageContent extends StatelessWidget {
+  const ProfilePageContent({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: kToolbarHeight,
-      child: Padding(
-        padding: AppPadding.h20,
-        child: AppBar(
-          title: Text(
-            'Profile',
-            maxLines: 1,
-            style: TextStyle(
-              color: AppColor.text,
-              fontSize: 16.sp,
-              fontWeight: FontWeight.w500,
-            ),
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(top: kToolbarHeight),
+      child: ScrollDetective(
+        list: SingleChildScrollView(
+          padding: AppPadding.h20,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const _ProfilePic(),
+              AppSpace.h10,
+              const _UserNameAndEmail(),
+              AppSpace.h20,
+              const _CountDisplay(),
+              AppSpace.h20,
+              const ProfileTabBar(),
+              const ProfileTabBarView(),
+            ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class _ProfilePageContent extends StatelessWidget {
-  const _ProfilePageContent();
-
-  @override
-  Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      padding: AppPadding.h20,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const _ProfilePic(),
-          AppSpace.h10,
-          const _UserNameAndEmail(),
-          AppSpace.h20,
-          const _CountDisplay(),
-          AppSpace.h20,
-          const DefaultTabController(
-              length: 3,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  TabBar(
-                    tabs: [
-                      Tab(text: 'Transaction'),
-                      Tab(text: 'Listings'),
-                      Tab(text: 'Sold')
-                    ],
-                  ),
-                  // TabBarView(
-                  //   physics: const NeverScrollableScrollPhysics(),
-                  //   children: [
-                  //     const _SearchFoundListView(properties: []),
-                  //     // Expanded(child: Container(color: AppColor.button)),
-                  //     Expanded(child: Container(color: AppColor.button)),
-                  //     Expanded(child: Container(color: AppColor.button)),
-                  //   ],
-                  // )
-                ],
-              ))
-        ],
+        top: Container(
+            decoration: AppDecoration.top(theme.scaffoldBackgroundColor),
+            height: 20.w),
       ),
     );
   }
@@ -172,11 +121,12 @@ class _UserNameAndEmail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
         style: TextStyle(
-          color: AppColor.text,
+          color: theme.mainText,
           fontSize: 14.sp,
           fontWeight: FontWeight.w600,
         ),

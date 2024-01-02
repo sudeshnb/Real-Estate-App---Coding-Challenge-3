@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proplink/src/core/animation/animation.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/routes/routes.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
 
@@ -55,6 +56,7 @@ class _FeaturedItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ShrinkButton(
       onPressed: () => goToPage(context),
       child: Container(
@@ -62,7 +64,7 @@ class _FeaturedItemCard extends StatelessWidget {
         margin: EdgeInsets.only(left: 20.w),
         padding: EdgeInsets.all(10.w),
         decoration: BoxDecoration(
-          color: AppColor.softGrey,
+          color: theme.cardColor,
           borderRadius: BorderRadius.circular(25.0),
         ),
         child: Row(
@@ -84,6 +86,7 @@ class _FeaturedItemCardRightSide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Expanded(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -91,9 +94,8 @@ class _FeaturedItemCardRightSide extends StatelessWidget {
         children: [
           Text(
             property.area!,
-            style: const TextStyle(
-              color: AppColor.text,
-              // fontSize: 14.sp,
+            style: TextStyle(
+              color: theme.text,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -102,8 +104,8 @@ class _FeaturedItemCardRightSide extends StatelessWidget {
               const Icon(Icons.star, color: Colors.orange),
               Text(
                 property.reviewCount.toString(),
-                style: const TextStyle(
-                  color: AppColor.text,
+                style: TextStyle(
+                  color: theme.text,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -115,7 +117,7 @@ class _FeaturedItemCardRightSide extends StatelessWidget {
               Text(
                 property.city!,
                 style: TextStyle(
-                  color: AppColor.text,
+                  color: theme.text,
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w300,
                 ),
@@ -125,7 +127,7 @@ class _FeaturedItemCardRightSide extends StatelessWidget {
           RichText(
             text: TextSpan(
               style: TextStyle(
-                color: AppColor.text,
+                color: theme.text,
                 fontSize: 16.sp,
                 fontWeight: FontWeight.bold,
               ),
@@ -219,6 +221,7 @@ class _FeaturedTopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
       padding: AppPadding.h20,
       child: Row(
@@ -227,7 +230,7 @@ class _FeaturedTopBar extends StatelessWidget {
           Text(
             'Featured Estates',
             style: TextStyle(
-              color: AppColor.text,
+              color: theme.text,
               fontSize: 18.sp,
               fontWeight: FontWeight.bold,
             ),
@@ -239,7 +242,7 @@ class _FeaturedTopBar extends StatelessWidget {
             child: Text(
               'view all',
               style: TextStyle(
-                color: AppColor.main,
+                color: theme.mainText,
                 fontSize: 14.sp,
               ),
             ),

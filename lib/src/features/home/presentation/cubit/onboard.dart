@@ -62,11 +62,6 @@ class OnboardPageViewCubit extends Cubit<OnboardPageViewState> {
   ///
   void clickNext() {
     if (state.onboards.length - 1 > state.index) {
-      // state.imageController.animateToPage(
-      //   state.index + 1,
-      //   curve: Curves.easeInQuad,
-      //   duration: const Duration(milliseconds: 500),
-      // );
       state.imageController.jumpToPage(state.index + 1);
 
       state.textController.jumpToPage(state.index + 1);
@@ -79,11 +74,6 @@ class OnboardPageViewCubit extends Cubit<OnboardPageViewState> {
   void clickBack() {
     if (!(state.index > 0)) return;
 
-    // state.imageController.animateToPage(
-    //   state.index - 1,
-    //   curve: Curves.easeInQuad,
-    //   duration: const Duration(milliseconds: 500),
-    // );
     state.imageController.jumpToPage(state.index - 1);
 
     state.textController.jumpToPage(state.index - 1);

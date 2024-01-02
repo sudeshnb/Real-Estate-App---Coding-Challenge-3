@@ -20,37 +20,36 @@ class DemoDataModel {
 
   factory DemoDataModel.fromMap(Map<String, dynamic> map) {
     return DemoDataModel(
-      categories: List<CategoryModel>.from(
-        (map['categories'] as List<dynamic>).map<CategoryModel>(
-          (x) => CategoryModel.fromMap(x as Map<String, dynamic>),
+        categories: List<CategoryModel>.from(
+          (map['categories'] as List<dynamic>).map<CategoryModel>(
+            (x) => CategoryModel.fromMap(x as Map<String, dynamic>),
+          ),
         ),
-      ),
-      discounts: List<DiscountModel>.from(
-        (map['discounts'] as List<dynamic>).map<DiscountModel>(
-          (x) => DiscountModel.fromMap(x as Map<String, dynamic>),
+        discounts: List<DiscountModel>.from(
+          (map['discounts'] as List<dynamic>).map<DiscountModel>(
+            (x) => DiscountModel.fromMap(x as Map<String, dynamic>),
+          ),
         ),
-      ),
-      locations: List<LocationModel>.from(
-        (map['locations'] as List<dynamic>).map<LocationModel>(
-          (x) => LocationModel.fromMap(x as Map<String, dynamic>),
+        locations: List<LocationModel>.from(
+          (map['locations'] as List<dynamic>).map<LocationModel>(
+            (x) => LocationModel.fromMap(x as Map<String, dynamic>),
+          ),
         ),
-      ),
-      argents: List<AgentModel>.from(
-        (map['argents'] as List<dynamic>).map<AgentModel>(
-          (x) => AgentModel.fromMap(x as Map<String, dynamic>),
+        argents: List<AgentModel>.from(
+          (map['argents'] as List<dynamic>).map<AgentModel>(
+            (x) => AgentModel.fromMap(x as Map<String, dynamic>),
+          ),
         ),
-      ),
-      nearby: List<Property>.from(
-        (map['nearby'] as List<dynamic>).map<Property>(
-          (x) => Property.fromJson(x as Map<String, dynamic>),
+        nearby: List<Property>.from(
+          (map['nearby'] as List<dynamic>).map<Property>(
+            (x) => Property.fromJson(x as Map<String, dynamic>),
+          ),
         ),
-      ),
-      features: List<Property>.from(
-        (map['features'] as List<dynamic>).map<Property>(
-          (x) => Property.fromJson(x as Map<String, dynamic>),
-        ),
-      ),
-    );
+        features: List<Property>.from(
+          (map['features'] as List<dynamic>).map<Property>(
+            (x) => Property.fromJson(x as Map<String, dynamic>),
+          ),
+        ));
   }
 
   factory DemoDataModel.fromJson(String source) =>

@@ -10,4 +10,5 @@ class RoutesName {
   static const panorama = '/panorama-screen';
 
   static const search = '/search-screen';
+  static const notification = '/notification-screen';
 }

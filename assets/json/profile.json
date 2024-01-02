@@ -1,0 +1,1087 @@
+{
+    "transaction":[
+      {
+         "id":"852223931024",
+         "area":"Westchester County",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "address":"6 Garth rd, Scarsdale, NY 10583",
+         "city":"Scarsdale",
+         "createAt":"2019-08-03T00:00:00Z",
+         "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+         "propertyType":"Duplex",
+         "floorspace":1264,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         "lotSizeUnit":"Acres",
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "reviewCount":3.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":5.0
+            }
+         ],
+         "numBedroom":3,
+         "numBathroom":1,
+         "prices":[
+            {
+               "amountMax":199,
+               "amountMin":199,
+               "currency":"$",
+               "dateSeen":[
+                  "2023-08-08T00:00:00Z",
+                  "2023-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":2120,
+               "amountMin":2100,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":2,
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600585153490-76fb20a32601?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
+            "https://unsplash.com/photos/brown-and-white-concrete-building-near-green-trees-during-daytime-GGupkreKwxA",
+            "https://images.unsplash.com/photo-1604014238170-4def1e4e6fcf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1604014238029-86e8c12579f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
+         ],
+         "facilities":[
+            "fireplace",
+            "landry"
+         ]
+      },
+      {
+         "id":"651263730501",
+         "area":"Westchester County",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "address":"39 Sterling ave, White Plains, NY 10606",
+         "city":"White Plains",
+         "createAt":"2019-08-03T00:00:00Z",
+         "image":"https://images.unsplash.com/photo-1628744448838-c04e09b1ba03?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+         "propertyType":"Luxury home",
+         "floorspace":768,
+         "numBedroom":3,
+         "numBathroom":2,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":900,
+               "amountMin":900,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":2000,
+               "amountMin":200,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":1,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1628744448839-a475cc0e90c3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1628744448839-170bf324f27e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1628744448953-89b6b70965c7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1628744448968-bf7a32f8dd33?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
+         ],
+         "reviewCount":3.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":3.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "elevator",
+            "garage"
+         ]
+      }
+    ],
+    "listings":[
+      {
+         "id":"3511539610225",
+         "area":"Westchester County",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "address":"62 Highland St, Eastchester, NY 10608",
+         "city":"Eastchester",
+         "createAt":"2019-08-03T00:00:00Z",
+         "image":"https://images.unsplash.com/photo-1600573472556-e636c2acda88?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDR8fHxlbnwwfHx8fHw%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          
+         "propertyType":"Single Family",
+         "floorspace":1264,
+         "numBedroom":4,
+         "numBathroom":2,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":300,
+               "amountMin":300,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":210,
+               "amountMin":210,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":0,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDZ8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDh8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDV8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600566752871-041b45cf7173?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDl8fHxlbnwwfHx8fHw%3D"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "basement",
+            "landry"
+         ]
+      },
+      {
+         "id":"2511639410001",
+         "area":"Westchester County",
+         "address":"33 Alden Pl, Bronxville, NY 10708",
+         "city":"Bronxville",
+         "createAt":"2019-08-03T00:00:00Z",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "image":"https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjJ8fHxlbnwwfHx8fHw%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+         "propertyType":"Townhouse",
+         "floorspace":1074,
+         "numBedroom":3,
+         "numBathroom":1,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":500,
+               "amountMin":600,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":200,
+               "amountMin":200,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":0,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1600047509782-20d39509f26d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjN8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047508329-e8c910592435?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjF8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047508825-4cd6cb46b543?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjV8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047508788-786f3865b4b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Njh8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047508895-81d631141857?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Njl8fHxlbnwwfHx8fHw%3D"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "fireplace",
+            "gym"
+         ]
+      },
+      {
+         "id":"2411639439991",
+         "area":"Westchester County",
+         "address":"261 California rd, Mamaroneck, NY 10612",
+         "city":"Mamaroneck",
+         "discountTitle":"Summer Vacation",
+         "createAt":"2019-08-03T00:00:00Z",
+         "discountDescription":"All discount up to 40%",
+         "image":"https://images.unsplash.com/photo-1574739782661-e603aa0dda2b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          
+         "propertyType":"Studio",
+         "floorspace":700,
+         "numBedroom":1,
+         "numBathroom":1,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":800,
+               "amountMin":800,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":420,
+               "amountMin":420,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":1,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1574739782661-e603aa0dda2b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1575422097784-18bbaa258f18?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1574120581581-2cbf5c9d5c41?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "landry",
+            "gym"
+         ]
+      },
+      {
+         "id":"1522639490009",
+         "area":"Westchester County",
+         "address":"23 Isle Lane, New Rochelle, NY 10538",
+         "city":"New Rochelle",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "createAt":"2019-08-03T00:00:00Z",
+         "image":"https://images.unsplash.com/photo-1548425603-8ac3fa97518b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+              
+         "propertyType":"Multi Family",
+         "floorspace":1630,
+         "numBedroom":3,
+         "numBathroom":2,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":900,
+               "amountMin":900,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":210,
+               "amountMin":210,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":3,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1520608421741-68228b76b6df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1495433324511-bf8e92934d90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":3.0
+            }
+         ],
+         "facilities":[
+            "basement",
+            "fireplace"
+         ]
+      },
+      {
+         "id":"19639490088",
+         "area":"Westchester County",
+         "address":"95 Vernon ave, Scarsdale, NY 10538",
+         "city":"Scarsdale",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "createAt":"2019-08-03T00:00:00Z",
+         "image":"https://images.unsplash.com/photo-1676828363820-cec64af164f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw0MTYwMTF8fGVufDB8fHx8fA%3D%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",       
+         "propertyType":"Studio",
+         "floorspace":1200,
+         "numBedroom":4,
+         "numBathroom":3,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":100,
+               "amountMin":100,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":200,
+               "amountMin":200,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":3,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1696814543783-c0835c0be682?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w0MTYwMTF8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1696860740767-f4211c9209f4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXw0MTYwMTF8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1696986681606-b156ccd761c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTJ8NDE2MDExfHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1696986293936-d8d080a88f50?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8NDE2MDExfHxlbnwwfHx8fHw%3D",
+            "https://plus.unsplash.com/premium_photo-1676321046262-4978a752fb15?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTh8NDE2MDExfHxlbnwwfHx8fHw%3D"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "elevator",
+            "garage",
+            "garden"
+            
+         ]
+      }
+    ],
+    "sold":[
+      {
+         "id":"3511539610225",
+         "area":"Westchester County",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "address":"62 Highland St, Eastchester, NY 10608",
+         "city":"Eastchester",
+         "image":"https://images.unsplash.com/photo-1600573472556-e636c2acda88?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDR8fHxlbnwwfHx8fHw%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+         "createAt":"2019-08-03T00:00:00Z",
+         "propertyType":"Single Family",
+         "floorspace":1264,
+         "numBedroom":4,
+         "numBathroom":2,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":300,
+               "amountMin":300,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":210,
+               "amountMin":210,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":0,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDZ8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDh8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDV8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600566752871-041b45cf7173?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDl8fHxlbnwwfHx8fHw%3D"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "basement",
+            "landry"
+         ]
+      },
+      {
+         "id":"2511639410001",
+         "area":"Westchester County",
+         "address":"33 Alden Pl, Bronxville, NY 10708",
+         "city":"Bronxville",
+         "discountTitle":"Summer Vacation",
+         "createAt":"2019-08-03T00:00:00Z",
+         "discountDescription":"All discount up to 40%",
+         "image":"https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjJ8fHxlbnwwfHx8fHw%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+         "propertyType":"Townhouse",
+         "floorspace":1074,
+         "numBedroom":3,
+         "numBathroom":1,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":500,
+               "amountMin":600,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":200,
+               "amountMin":200,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":0,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1600047509782-20d39509f26d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjN8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047508329-e8c910592435?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjF8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047508825-4cd6cb46b543?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjV8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047508788-786f3865b4b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Njh8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1600047508895-81d631141857?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Njl8fHxlbnwwfHx8fHw%3D"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "fireplace",
+            "gym"
+         ]
+      },
+      {
+         "id":"2411639439991",
+         "area":"Westchester County",
+         "address":"261 California rd, Mamaroneck, NY 10612",
+         "city":"Mamaroneck",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "image":"https://images.unsplash.com/photo-1574739782661-e603aa0dda2b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+         "createAt":"2019-08-03T00:00:00Z",
+         "propertyType":"Studio",
+         "floorspace":700,
+         "numBedroom":1,
+         "numBathroom":1,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":800,
+               "amountMin":800,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":420,
+               "amountMin":420,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":1,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1574739782661-e603aa0dda2b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1575422097784-18bbaa258f18?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1574120581581-2cbf5c9d5c41?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "landry",
+            "gym"
+         ]
+      },
+      {
+         "id":"1522639490009",
+         "area":"Westchester County",
+         "address":"23 Isle Lane, New Rochelle, NY 10538",
+         "city":"New Rochelle",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "image":"https://images.unsplash.com/photo-1548425603-8ac3fa97518b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+         "createAt":"2019-08-03T00:00:00Z",
+         "propertyType":"Multi Family",
+         "floorspace":1630,
+         "numBedroom":3,
+         "numBathroom":2,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":900,
+               "amountMin":900,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":210,
+               "amountMin":210,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":3,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1520608421741-68228b76b6df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1495433324511-bf8e92934d90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":3.0
+            }
+         ],
+         "facilities":[
+            "basement",
+            "fireplace"
+         ]
+      },
+      {
+         "id":"19639490088",
+         "area":"Westchester County",
+         "address":"95 Vernon ave, Scarsdale, NY 10538",
+         "city":"Scarsdale",
+         "discountTitle":"Summer Vacation",
+         "discountDescription":"All discount up to 40%",
+         "createAt":"2019-08-03T00:00:00Z",
+         "image":"https://images.unsplash.com/photo-1676828363820-cec64af164f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw0MTYwMTF8fGVufDB8fHx8fA%3D%3D",
+         "panaroma":"https://images.pexels.com/photos/6585626/pexels-photo-6585626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",       
+         "propertyType":"Studio",
+         "floorspace":1200,
+         "numBedroom":4,
+         "numBathroom":3,
+         "overView":"The customer is very important, the customer will be followed by the customer. And these seven were named not by their own, but by the vote of all the people. The lust of Claudius, who was then in command. The second meaning is the same, as if it were said that all or most of the duties of the means are to live Let him answer in as many I will compare with you.",
+         "brokers":[
+            {
+               "agent":"Sudesh Bandara",
+               "image":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
+               "company":"ONYXSIO PVT LTD.",
+               "phone":"+94741325674",
+               "email":"sudeshnbandara@mail.com"
+            }
+         ],
+         "prices":[
+            {
+               "amountMax":100,
+               "amountMin":100,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-08-08T00:00:00Z",
+                  "2016-08-03T00:00:00Z"
+               ],
+               "isSale":"month"
+            },
+            {
+               "amountMax":200,
+               "amountMin":200,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T00:00:00Z"
+               ],
+               "isSale":"month"
+            }
+         ],
+         "parking":3,
+         "latitude":"39.284462",
+         "listingName":"711 Kent Ave, Catonsville, Md 21228",
+         "longitude":"-76.734069",
+         "lotSizeValue":0.16,
+         "lotSizeUnit":"Acres",
+         "propertyTaxes":[
+            {
+               "amount":3195,
+               "currency":"$",
+               "dateSeen":[
+                  "2016-06-06T18:09:28Z"
+               ]
+            }
+         ],
+         "images":[
+            "https://images.unsplash.com/photo-1696814543783-c0835c0be682?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w0MTYwMTF8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1696860740767-f4211c9209f4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXw0MTYwMTF8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1696986681606-b156ccd761c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTJ8NDE2MDExfHxlbnwwfHx8fHw%3D",
+            "https://images.unsplash.com/photo-1696986293936-d8d080a88f50?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8NDE2MDExfHxlbnwwfHx8fHw%3D",
+            "https://plus.unsplash.com/premium_photo-1676321046262-4978a752fb15?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTh8NDE2MDExfHxlbnwwfHx8fHw%3D"
+         ],
+         "reviewCount":2.4,
+         "reviews":[
+            {
+               "userImage":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+               "userName":"Kurt Mullins",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2019-08-03T00:00:00Z",
+               "review":4.0
+            },
+            {
+               "userImage":"https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
+               "userName":"Kay Swanson",
+               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+               "createAt":"2022-08-03T00:00:00Z",
+               "review":4.0
+            }
+         ],
+         "facilities":[
+            "elevator",
+            "garage",
+            "garden"
+            
+         ]
+      }
+    ]
+ }

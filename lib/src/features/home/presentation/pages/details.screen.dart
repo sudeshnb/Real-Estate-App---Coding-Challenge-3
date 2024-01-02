@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
 
@@ -15,6 +16,7 @@ class DetailsScreen extends StatelessWidget {
   final Property property;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       body: SafeArea(
         child: Stack(
@@ -27,15 +29,14 @@ class DetailsScreen extends StatelessWidget {
                   TitleSection(property: property),
                   Padding(
                     padding: AppPadding.h20,
-                    child:
-                        const Divider(thickness: 3, color: AppColor.softGrey),
+                    child: Divider(thickness: 3, color: theme.cardColor),
                   ),
                   FacilitiesSection(property: property),
                   Padding(
                     padding: AppPadding.h20,
                     child: Text(
                       property.overView!,
-                      style: const TextStyle(color: AppColor.text),
+                      style: TextStyle(color: theme.text),
                     ),
                   ),
                   BrokerSection(property: property),
@@ -44,7 +45,9 @@ class DetailsScreen extends StatelessWidget {
                   SizedBox(height: 150.h),
                 ].verticalGap(12.w),
               ),
-              top: Container(decoration: AppDecoration.top, height: 20.w),
+              top: Container(
+                  decoration: AppDecoration.top(theme.scaffoldBackgroundColor),
+                  height: 20.w),
             ),
             _AppBar(property: property),
             _BottomNavBar(property: property)
@@ -62,11 +65,14 @@ class _BottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Align(
       alignment: Alignment.bottomCenter,
       child: Container(
         height: 100.w,
-        decoration: AppDecoration.bottomAppBar,
+        decoration: AppDecoration.bottomAppBar(
+          theme.appBarTheme.backgroundColor!,
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -91,6 +97,7 @@ class _BottomNavBar extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      AppSpace.w5,
                       SvgPicture.asset(AssetPath.arrow),
                     ],
                   ),
@@ -111,11 +118,12 @@ class _RightSidePriceArea extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return RichText(
       textAlign: TextAlign.start,
       text: TextSpan(
         style: TextStyle(
-          color: AppColor.main,
+          color: theme.mainText,
           fontSize: 22.sp,
           fontWeight: FontWeight.bold,
         ),
@@ -126,7 +134,7 @@ class _RightSidePriceArea extends StatelessWidget {
             text: '\npre ${property.prices![0].isSale}',
             style: TextStyle(
               fontSize: 12.sp,
-              color: AppColor.main,
+              color: theme.mainText,
               fontWeight: FontWeight.w300,
             ),
           ),
@@ -141,8 +149,8 @@ class _AppBar extends StatelessWidget {
   final Property property;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Positioned(
-      // top: kToolbarHeight,
       top: 20.w,
       left: 20.w,
       right: 20.w,
@@ -164,8 +172,8 @@ class _AppBar extends StatelessWidget {
               return CircleButton(
                 onPressed: () => context.read<FavoriteCubit>().add(property),
                 icon: hasData ? Icons.favorite : Icons.favorite_border,
-                color: hasData ? AppColor.white : AppColor.radial,
-                bgColor: hasData ? AppColor.button : AppColor.softGrey,
+                color: hasData ? AppColor.white : theme.mainIcon,
+                bgColor: hasData ? AppColor.button : theme.cardColor,
               );
             },
           ),

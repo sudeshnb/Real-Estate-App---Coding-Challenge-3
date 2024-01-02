@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
+import 'package:proplink/src/core/theme/theme.dart';
 import 'package:proplink/src/core/utils/timeago.dart';
 import 'package:proplink/src/core/widgets/widgets.dart';
 import 'package:proplink/src/features/home/data/models/property.dart';
@@ -15,6 +16,7 @@ class ReviewSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
       padding: AppPadding.h20,
       child: Column(
@@ -24,7 +26,7 @@ class ReviewSection extends StatelessWidget {
           Text(
             'Reviews',
             style: TextStyle(
-              color: AppColor.main,
+              color: theme.mainText,
               fontSize: 16.sp,
               fontWeight: FontWeight.bold,
             ),
@@ -36,7 +38,7 @@ class ReviewSection extends StatelessWidget {
                 children: [
                   _RivewCard(review: property.reviews![index]),
                   AppSpace.h20,
-                  _viewAll()
+                  _viewAll(theme)
                 ],
               );
             }
@@ -48,7 +50,7 @@ class ReviewSection extends StatelessWidget {
     );
   }
 
-  Widget _viewAll() {
+  Widget _viewAll(ThemeData theme) {
     return ShrinkButton(
       onPressed: () {},
       child: Container(
@@ -56,14 +58,14 @@ class ReviewSection extends StatelessWidget {
         width: double.infinity,
         padding: AppPadding.all15,
         decoration: BoxDecoration(
-          color: AppColor.softGrey,
+          color: theme.cardColor,
           borderRadius: BorderRadius.circular(16.0),
         ),
         child: Center(
           child: Text(
             'View all reviews',
             style: TextStyle(
-              color: AppColor.main,
+              color: theme.mainText,
               fontSize: 14.sp,
               fontWeight: FontWeight.w400,
             ),
@@ -79,12 +81,13 @@ class _RivewCard extends StatelessWidget {
   final Reviews review;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Container(
       height: 150.w,
       width: double.infinity,
       padding: AppPadding.all15,
       decoration: BoxDecoration(
-        color: AppColor.softGrey,
+        color: theme.cardColor,
         borderRadius: BorderRadius.circular(25.0),
       ),
       child: Row(
@@ -94,7 +97,7 @@ class _RivewCard extends StatelessWidget {
           Container(
             height: 50.w,
             width: 50.w,
-            decoration: AppDecoration.circle(true),
+            decoration: AppDecoration.circle(true, theme.cardColor),
             child: _profilePic(review.userImage!),
           ),
           AppSpace.w10,
@@ -121,6 +124,7 @@ class _ReviewCardTextArea extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Expanded(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -131,7 +135,7 @@ class _ReviewCardTextArea extends StatelessWidget {
                 child: Text(
                   review.userName!,
                   style: TextStyle(
-                    color: AppColor.main,
+                    color: theme.mainText,
                     fontSize: 14.sp,
                     fontWeight: FontWeight.bold,
                   ),
@@ -144,7 +148,7 @@ class _ReviewCardTextArea extends StatelessWidget {
             review.description!,
             maxLines: 4,
             style: TextStyle(
-              color: AppColor.main,
+              color: theme.mainText,
               fontSize: 12.sp,
               fontWeight: FontWeight.w400,
             ),
@@ -152,7 +156,7 @@ class _ReviewCardTextArea extends StatelessWidget {
           Text(
             Timeago.time(review.createAt!),
             style: TextStyle(
-              color: AppColor.radial,
+              color: theme.mainText,
               fontSize: 12.sp,
               fontWeight: FontWeight.bold,
             ),
@@ -168,10 +172,11 @@ class _MainReviews extends StatelessWidget {
   final Property property;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Container(
       padding: AppPadding.all10,
       decoration: BoxDecoration(
-        color: AppColor.softGrey,
+        color: theme.cardColor,
         borderRadius: BorderRadius.circular(16.0),
       ),
       child: Row(
@@ -184,7 +189,7 @@ class _MainReviews extends StatelessWidget {
               Text(
                 "From ${property.reviews!.length} reviewers",
                 style: TextStyle(
-                  color: AppColor.main,
+                  color: theme.mainText,
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w400,
                 ),
@@ -195,7 +200,7 @@ class _MainReviews extends StatelessWidget {
           Text(
             property.reviewCount.toString(),
             style: TextStyle(
-              color: AppColor.main,
+              color: theme.mainText,
               fontSize: 22.sp,
               fontWeight: FontWeight.bold,
             ),

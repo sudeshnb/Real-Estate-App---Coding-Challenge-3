@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:proplink/src/core/animation/animation.dart';
 import 'package:proplink/src/core/constants/constants.dart';
 import 'package:proplink/src/core/extension/extension.dart';
 import '../bloc/bloc.dart';
@@ -13,11 +14,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        _backgroundCircle(),
-        const _HomePageContent(),
-      ],
+    return OpacityTranslateAnimation(
+      child: Stack(
+        children: [
+          _backgroundCircle(),
+          const _HomePageContent(),
+        ],
+      ),
     );
   }
 
